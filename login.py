@@ -13,7 +13,7 @@ from sqlalchemy.ext.declarative import declarative_base
 
 # Database Configuration
 username = "root"
-password = "Mysql%400195"
+password = "*******"
 DATABASE_URL = "mysql+pymysql://{0}:{1}@127.0.0.1:3306/attendance_db".format(username, password)
 
 engine = create_engine(DATABASE_URL)
@@ -25,7 +25,7 @@ Base = declarative_base()
 app = FastAPI()
 
 # Secret key, algorithm, and token expiration time
-SECRET_KEY = "e8c59a3ecc50a63786c075ed2f3bf5536b514fdb8a34923e69ea44a42e9d0a50"
+SECRET_KEY = "*******"
 ALGORITHM = "HS256"
 ACCESS_TOKEN_EXPIRE_MINUTES = 30
 
